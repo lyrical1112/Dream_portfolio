@@ -1,3 +1,5 @@
+/* Global */
+
 @font-face {
     font-family: 'YESMyoungjo-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
@@ -10,4 +12,22 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+    /* color */
+
+    /* font-size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* size */
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
 }
