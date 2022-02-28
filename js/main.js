@@ -31,6 +31,28 @@ homeContactBtn.addEventListener('click', ()=> {
     scrollIntoView('#contact');
 });
 
+
+// homeContent가 스크롤시 opacity가 서서히 줄어듬
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener("scroll", () => {
+    //   console.log(`homeHeight: ${homeHeight}`);    850
+
+    // 컨셉) opacity 값을 바로 적용. (1-스크롤px / 홈의 높이)
+    //   console.log(1 - window.scrollY / homeHeight); -> opacity의 값.
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+
+
+
+
+
+
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView( { behavior: 'smooth' } );
