@@ -44,8 +44,20 @@ document.addEventListener("scroll", () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// top버튼 나오기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
 
-
+// top버튼 클릭시 move
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 
 
 
