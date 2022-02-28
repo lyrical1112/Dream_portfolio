@@ -54,6 +54,31 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// project 버튼 클릭시 필터링
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__project');
+const project = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click' , (e)=> {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if (filter == null) {
+        return;
+    }
+
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=> {
+        projectContainer.classList.remove('anim-out');
+    },300);
+
+    
+    project.forEach( (project) => {
+        if( filter === '*' || filter === project.dataset.type ) {
+            project.classList.remove('invisible');
+        }else {
+            project.classList.add('invisible');
+        }
+    });
+});
+
 // top버튼 클릭시 move
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
