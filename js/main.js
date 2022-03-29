@@ -98,12 +98,89 @@ arrowUp.addEventListener('click', () => {
 });
 
 
+// observer
+const sectionIds = ['#home','#about','#skills','#work','#contact'];
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
 
-
-
-
+let selectedNavIndex = 0; 
+let selectedNavItem = navItems[0];
+function selectNavItem(selected){
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
+}
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView( { behavior: 'smooth' } );
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
+
+const observerOptions = {
+    root:null,
+    rootMargin: '0px',
+    threshold: 0.3,
+}
+
+const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting && entry.intersectionRatio > 0) {
+            const index = sectionIds.indexOf(`#${entry.target.id}`);
+            // 스크롤링이 아래로 되어서 페이지가 올라옴
+            if(entry.boundingClientRect.y < 0) {
+                selectedNavIndex = index + 1;
+            }else {
+                selectedNavIndex = index - 1;
+            };
+        };
+    });
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY === 0) {
+        selectedNavIndex = 0;
+    } else if (
+        Math.round(window.scrollY + window.innerHeight) >=
+        document.body.clientHeight
+    ) {
+        selectedNavIndex = navItems.length - 1; 
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+});
+
+
+$(function(){
+    // 타이핑효과 
+    let text = document.getElementById("typeStyle");
+    let typewriter = new Typewriter(text, {
+        loop: true
+    });
+
+    typewriter.typeString('Welcome to My Portfolio')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('New frontend developer')
+        .pauseFor(2000)
+        // .deleteChars(2)
+        // .deleteAll()
+        // .typeString('Impossible에 땀 한방울이면 I\'m possible이 된다')
+        // .pauseFor(2500)
+        .start();
+        
+    });
+    
+    // 텍스트 색 변경효과
+    let array=["skyblue","yellow","lime","blue","orange","pink"];
+    let cnt=0;
+    window.onload=function(){
+        color();
+    }
+
+    function color(){
+        if(cnt==6) cnt=0;
+        rainbow.style.color=array[cnt++];
+        setTimeout("color()",500);
+    }

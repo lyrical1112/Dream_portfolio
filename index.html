@@ -11,12 +11,74 @@
     <script src="https://kit.fontawesome.com/df23784975.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+
+    <!-- 배경 -->
+    <link rel="stylesheet" href="css/background.css">
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
 </head>
 <body>
+    <div class="space">
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fas fa-file-code"></i>
+            <img src="img/logo.png" alt="logo">
             <a href="#">Junghyeon</a>
         </div>
         <ul class="navbar__menu">
@@ -24,7 +86,7 @@
             <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
             <li class="navbar__menu__item" data-link="#work">My work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+            <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
 
@@ -33,273 +95,288 @@
             <i class="fas fa-bars"></i>
         </button>
     </nav>
-    <div id="wrap">
-        <!-- Home -->
-        <section id="home">
-            <!-- <img src="" alt="Junghyeon's profile photo" class="home__avatar"> -->
-            <div class="home__container">
-                <h1 class="home__title">Hello<br>
-                    I'm Dream Coder
-                </h1>
-                <h2 class="home__description">
-                    A new front-end developer<br>
-                    who always strives
-                </h2>
-                <button class="home__contact" data-link="#contact">Contact Me</button>
-            </div>
-        </section>
-        <!-- About -->
-        <section id="about" class="section section__container">
-            <h1>About me</h1>
-            <p>I am a new front-end developer who completed the front-end development course at Nowon Green Computer Academy</p>
-            <div class="about__majors">
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h2 class="major__title">Front-end</h2>
-                    <div class="major__description">
-                        HTML, CSS, JavaScript, TypeScript,<br>
-                        React, bootstrap, Web API's
-                    </div>
+    <!-- Home -->
+    <section id="home">
+        <!-- <img src="" alt="Junghyeon's profile photo" class="home__avatar"> -->
+        <div class="home__container">
+            <img src="img/KakaoTalk_20211027_043743625.jpg" alt="profile" class="home__avatar">
+            <h1 class="home__title">
+                <div id="typeStyle"></div>
+            </h1>
+            <h2 class="home__description">
+                    <!-- Hello I'm Junior programmer<br> -->
+                    UI/UX DESIGNER<br>
+                    WEB PUBLISHER<br>
+                    FRONTEND DEVELOPER<br>
+                    <span id="rainbow">SUNG-Junghyeon</span> PORTFOLIIO<br>
+            </h2>
+            <button class="home__contact" data-link="#contact">Contact Me</button>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <p>저는 배움에는 끝이 없다는 모토를 가지고 항상 겸손한 자세를 유지하며 배워가고 성장하기를 희망하는 개발자 성중현입니다.</p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
                 </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-sketch"></i>
-                    </div>
-                    <h2 class="major__title">Design planning</h2>
-                    <div class="major__description">
-                        Adobe XD, Sketch, Figma, Photoshop,<br>
-                        Illustrator, Design and planning
-                    </div>
-                </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h2 class="major__title">Back-end</h2>
-                    <div class="major__description">
-                        Firebase, Mongo DB, Node.js, Php, <br>
-                        Mysql, Rest API's
-                    </div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">
+                    HTML, CSS, JavaScript, TypeScript,<br>
+                    React, bootstrap, Web API's
                 </div>
             </div>
-            <div class="about__jobs">
-                <div class="job">
-                    <img src="img/jobs/n_logo0.svg" alt="Academy logo" class="job__logo">
-                    <div class="job__description">
-                        <p class="job__name">
-                            노원그린컴퓨터 아카데미
-                        </p>
-                        <p class="job__period">
-                            2021 June - 2021 November
-                        </p>
-                    </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-sketch"></i>
                 </div>
-                <div class="job"></div>
-            </div>
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="section__container">
-                <h1>Skills</h1>
-                <h2>Skills & Attributes</h2>
-                <p>
-                    Experience all phases of the software life-cycle. Passion for learning new technologies. Capable of 
-                    working within a team environment and independently. Ability to plan and time schedule, work under
-                    strict time pressure and adapt quickly when needed.
-                </p>
-                <div class="skillset">
-                    <div class="skillset__left">
-                        <h3 class="skillset__title">Skills</h3>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>HTML</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>CSS</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"  style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>JavaScript</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"  style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>TypeScript</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"  style="width: 50%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>React</span>
-                                <span>60%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"  style="width: 60%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_description">
-                                <span>Node.js</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"  style="width: 50%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skillset__right">
-                        <div class="tools">
-                            <h3 class="skillset__title">Tools</h3>
-                            <ul class="tools__list">
-                                <li><span>Adobe Photoshop</span></li>
-                                <li><span>Adobe Illustrator</span></li>
-                                <li><span>Adobe XD</span></li>
-                                <li><span>Visual Studio Code</span></li>
-                            </ul>
-                        </div>
-                        <div class="etc">
-                            <h3 class="skillset__title">Etc</h3>
-                            <ul class="etc__list">
-                                <li><span>Git</span></li>
-                                <li><span>Figma</span></li>
-                                <li><span>Notion</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                <h2 class="major__title">Design planning</h2>
+                <div class="major__description">
+                    Adobe XD, Sketch, Figma, Photoshop,<br>
+                    Illustrator, Design and planning
                 </div>
             </div>
-        </section>
-        <!-- Work -->
-        <section id="work" class="section">
-            <div class="section__container">
-                <h1>My work</h1>
-                <h3>Project</h3>
-                <div class="work__categories">
-                    <button class="category__btn selected" data-filter="*">All<span class="category__count">8</span></button>
-                    <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">3</span></button>
-                    <button class="category__btn" data-filter="etc">Etc<span class="category__count">2</span></button>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-server"></i>
                 </div>
-                <div class="work__project">
-                    <a href="" class="project" target="_blank" data-type="front-end">
-                        <img src="img/projects/project1.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3>코카-콜라 (리뉴얼)</h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project2.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3>에이스베드 (클론코딩)</h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project3.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3>어여모 (클론코딩)</h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project4.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3>라운드어라운드 (클론코딩)</h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project5.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3></h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project6.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3></h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="front-end">
-                        <img src="img/projects/project7.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3></h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
-                    <a href="" class="project" target="blank" data-type="etc">
-                        <img src="img/projects/project8.png" alt="" class="project__img">
-                        <div class="project__description">
-                            <h3></h3>
-                            <span>Clone coding with HTML,CSS,JS</span>
-                        </div>
-                    </a>
+                <h2 class="major__title">Back-end</h2>
+                <div class="major__description">
+                    Firebase, Mongo DB, Node.js, Php, <br>
+                    Mysql, Rest API's
                 </div>
             </div>
-        </section>
-        <!-- Testimonials -->
-        <section id="testimonials" class="section">
-            <div class="section__container">
-                <h1>Testimonials</h1>
-                <h3>See what they say about me</h3>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <img src="img/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avatar">
-                        <div class="testimonial__speech-bubble">
-                            <p>He does his best in his job and gives positive energy to others</p>
-                            <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="img/jobs/n_logo0.svg" alt="Academy logo" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">
+                        노원그린컴퓨터 아카데미
+                    </p>
+                    <p class="job__period">
+                        2021 June - 2021 November
+                    </p>
+                </div>
+            </div>
+            <div class="job"></div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                공부한 언어, 사용할 수 있는 툴과 제가 생각하는 언어에 대한 수준입니다.<br>
+                방대한 프로그래밍 지식을 머리에 다 담을 수는 없기에, 디지털 노트를 통해 기록해 놓는 걸 선호합니다.
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
                         </div>
                     </div>
-                    <div class="testimonial">
-                        <div class="testimonial__speech-bubble">
-                            <p>He does his best in his job and gives positive energy to others</p>
-                            <p class="name"><a href="">Ellie</a> / Samsung</p>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>CSS</span>
+                            <span>85%</span>
                         </div>
-                        <img src="img/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avatar">
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"  style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>TypeScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"  style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>React</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"  style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Node.js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"  style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Adobe Photoshop</span></li>
+                            <li><span>Adobe Illustrator</span></li>
+                            <li><span>Adobe XD</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>Visual Studio Code</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git & Github</span></li>
+                            <li><span>Notion</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h1 class="contact__title">Let's talk</h1>
-            <h2 class="contact__email">lyrical1112@naver.com</h2>
-            <div class="contact__links">
-                <a href="" target="_blank">
-                    <i class="fab fa-github"></i>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Project</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="*">All<span class="category__count">8</span></button>
+                <button class="category__btn" data-filter="web">Web<span class="category__count">2</span></button>
+                <button class="category__btn" data-filter="responsive">Responsive<span class="category__count">4</span></button>
+                <button class="category__btn" data-filter="etc">Etc<span class="category__count">2</span></button>
+            </div>
+            <div class="work__project">
+                <a href="http://sonatine.co.kr/" class="project" target="blank" data-type="responsive">
+                    <img src="img/projects/portfolio-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>성중현 포트폴리오</h3>
+                        <span>SF컨셉으로 디자인한 저의 포트폴리오 사이트 입니다.</span>
+                    </div>
                 </a>
-                <a href="" target="_blank">
-                    <i class="fa fa-linkedin-square"></i>
+                <a href="http://sonatine11.dothome.co.kr/" class="project" target="_blank" data-type="responsive">
+                    <img src="img/projects/coca-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>코카-콜라 (리뉴얼)</h3>
+                        <span>
+                            팀프로젝트로 했던 코카콜라 리뉴얼 프로젝트입니다.<br>
+                            PHP Mysql를 이용한 고객상담센터 게시판 페이지 구현
+                        </span>
+                    </div>
+                </a>
+                <a href="http://sonatine1.dothome.co.kr/" class="project" target="blank" data-type="web">
+                    <img src="img/projects/ace-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>에이스베드 (클론코딩)</h3>
+                        <span>
+                            처음 HTML, CSS, JS를 배울때 한 에이스베드 클론코딩 프로젝트 입니다.<br>
+                            php mysql로 게시판, 회원가입 후 로그인 기능구현
+                        </span>
+                    </div>
+                </a>
+                <a href="https://lyrical1112.github.io/megabox/" class="project" target="blank" data-type="responsive">
+                    <img src="img/projects/megabox-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>메가박스 (클론코딩)</h3>
+                        <span>HTML,CSS,JS,jQuery를 활용하여 만든 반응형 메가박스 클론코딩 프로젝트입니다.</span>
+                    </div>
+                </a>
+                <a href="https://lyrical1112.github.io/eoyeomo/" class="project" target="blank" data-type="responsive">
+                    <img src="img/projects/eyeomo-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>어여모 (클론코딩)</h3>
+                        <span>HTML,CSS,JS를 활용하여 반응형에 중점을 둔 어여모 클론코딩 프로젝트입니다.</span>
+                    </div>
+                </a>
+                <a href="https://lyrical1112.github.io/Round_Around/" class="project" target="blank" data-type="web">
+                    <img src="img/projects/round-1.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>라운드어라운드 (클론코딩)</h3>
+                        <span>CSS를 심화적으로 배울때 했던 클론코딩 프로젝트 입니다.</span>
+                    </div>
+                </a>
+                <a href="https://lyrical1112.github.io/shopping-template/" class="project" target="blank" data-type="etc">
+                    <img src="img/projects/shopping-template.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>쇼핑몰 미니 게임</h3>
+                        <span>JavaScript를 사용해서 카테고리별 필터링 기능을 구현한 간단 미니게임</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank" data-type="etc">
+                    <img src="img/projects/project8.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>준비중..</h3>
+                        <span>with Recat</span>
+                    </div>
                 </a>
             </div>
-            <p class="contact__rights">2022 Dream Coding Junghyeon - All rights reserved</p>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <!-- <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="img/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>He does his best in his job and gives positive energy to others</p>
+                        <p class="name"><a href="">Ellie</a> / Samsung</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>He does his best in his job and gives positive energy to others</p>
+                        <p class="name"><a href="">Ellie</a> / Samsung</p>
+                    </div>
+                    <img src="img/testimonial/people1-200515-154332.jpg" alt="People" class="testimonial__avatar">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">lyrical1112@naver.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/lyrical1112" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- <a href="" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a> -->
+            <a href="https://sonatine.notion.site/79a442b1b47c4642938cf604d08c55de" target="_blank">
+                <i class="fas fa-blog"></i>
+            </a>
+            <a href="https://sonatine.notion.site/Front-End-653189ec497d4aaa8b09fab8a3f517e4" target="_blank">
+                <i class="fas fa-address-card"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2022 Dream Coding Junghyeon - All rights reserved</p>
+    </section>
+
     <!-- Arrow up -->
     <button class="arrow-up">
-        <i class="fas fa-caret-square-up"></i>
+        <i class="fas fa-rocket"></i>
     </button>
 </body>
 </html>
